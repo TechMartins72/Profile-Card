@@ -3,7 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>My Profile Card</title>
   </head>
-  <body></body>
+  <body>
+    <span data-testid="currentTimeUTC" id="current-time"> </span>
+    <main>
+      <div id="profile-photo" data-testid="profilePhoto">
+        <img src="assets\profile_card_photo.jpg" alt="profile-photo" />
+      </div>
+      <div id="section">
+        <div>
+          <h1 data-testid="fullName">Joseph Martins</h1>
+          <small data-testid="jobTitle">Next.js Developer</small>
+        </div>
+        <p data-testid="shortBio">
+          I love coding, I love to do business more ❤<br />
+          I am a Tech Enthusiast.
+        </p>
+        <div id="contact">
+          <p data-testid="currentLocation">
+            <small> Zaria, Kaduna State - Nigeria </small>
+          </p>
+          <p data-testid="emailAddress">
+            <small> techmartins72@gmail.com </small>
+          </p>
+          <ul data-testid="socialLinks">
+            <a href="https://twitter.com/_martinsjoseph" target="_blank">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="https://github.com/TechMartins72" target="_blank">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://instagram.com/_martinsjoseph" target="_blank">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
 </html>
